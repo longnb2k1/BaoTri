@@ -1,4 +1,6 @@
 var listItem = document.querySelectorAll('.itemCanSelect');
+var eleForm1 = document.getElementById("form-log1");
+var eleForm2 = document.getElementById("form-log2");
 function showClick(idItemSelect,objectChange)
 {
     var eleSelect =  document.getElementById(idItemSelect);
@@ -24,7 +26,40 @@ function closeTabLogin(value)
 {
     var eleFormLogin =  document.querySelector(".nav_login");
     if (value)
-        eleFormLogin.classList.add("cl");
+        {
+            eleFormLogin.classList.add("cl");
+            preFormRegis();
+        }
     else
         eleFormLogin.classList.remove("cl");
+}
+
+function toggleShowPass()
+{
+    var eleChk = document.querySelector(".check_pass #check_pass_regis");
+    if (eleChk.checked)
+       document.getElementById("pass_regis").setAttribute("type","text"); 
+    else
+    document.getElementById("pass_regis").setAttribute("type","password");
+}
+
+function nextFormRegis(){
+    var emailUser = eleForm1.querySelector("#email_regis").value;
+    eleForm1.classList.add("cl");
+    eleForm2.classList.remove("cl");
+    eleForm2.querySelector("#email_user").innerHTML = emailUser;
+}
+function preFormRegis(){
+    var eleForm1 = document.getElementById("form-log1");
+    var eleForm2 = document.getElementById("form-log2");
+    eleForm1.classList.remove("cl");
+    eleForm2.classList.add("cl");
+}
+function showResult()
+{
+    var emailUser = eleForm2.querySelector("#email_user").textContent;
+    var nameUser = eleForm2.querySelector("#name_regis").value;
+    var passUser = eleForm2.querySelector("#pass_regis").value;
+    var telUser = eleForm2.querySelector("#tel_regis").value;
+    window.alert(nameUser + "\n" + passUser + "\n" + telUser + "\n" + emailUser)
 }

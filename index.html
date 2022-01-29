@@ -449,7 +449,7 @@
                 </li>
             </ul>
             <div class="nav_tk cl" id="header__nav--tk">
-                <input type="search" name="Tìm kiếm" placeholder="Tìm kiếm" id="nav_search">
+                <input type="text" name="Tìm kiếm" placeholder="Tìm kiếm" id="nav_search">
                 <a href="#" class="fas fa-search"></a>
             </div>
             <ul class="list_nav_ti cl" id="header__nav--lh">
@@ -474,7 +474,7 @@
                     <div class="login_logo">
                         <div class="header_logo_text">báo chí</div>
                     </div>
-                    <div class="login_content_inner">
+                    <div class="login_content_inner" id="form-log1">
                         <div class="login_header">Đăng ký / Đăng nhập với BaoChi.vn</div>
                         <div class="login_group_btn">
                             <div class="btn_login">
@@ -511,19 +511,54 @@
                         <div class="login_subhead">
                             Hoặc
                         </div>
-                        <div class="regist_header">
+                        <div class="regist_header mgt-20">
                             <div class="regis_form_group">
                                 <label >Nhập địa chỉ email của bạn</label>
                                 <input type="email" name="email" class="group_text_email" id="email_regis">
                             </div>
                         </div>
-                        <a href="#" class="btn_next">
+                        <a href="#" class="btn_next" onclick="nextFormRegis()">
                             Tiếp tục
                             <i class="fas fa-chevron-right"></i>
                         </a>
                         <div class="group_user_policy">
                             <a href="#" class="user_policy_text">Điều khoản người sử dụng</a>
                             <a href="#" class="user_policy_text">Quên mật khẩu?</a>
+                        </div>
+                    </div>
+                    <div class="login_content_inner cl" id="form-log2">
+                        <div class="login_inner_head">
+                            <h1>Chào mừng,</h1>
+                            <a id="email_user" href="#">hoangmanh12a@gmail.com</a>
+                            <div class="login_head_intro">Vui lòng hoàn thiện các thông tin dưới đây để tạo account truy cập <a href="#">Baochi.vn</a></div>
+                            <div class="regist_header mgt-20 ">
+                                <div class="regis_form_group">
+                                    <label >1.Tên hiển thị</label>
+                                    <input type="text" name="email" class="group_text_email" id="name_regis">
+                                </div>
+                            </div>
+                            <div class="regist_header">
+                                <div class="regis_form_group">
+                                    <label >2. Nhập mật khẩu</label>
+                                    <input type="password" name="password" placeholder="Nhập mật khẩu tối thiểu 6 ký tự" class="group_text_email" id="pass_regis">
+                                    <div class="check_pass">
+                                        <input type="checkbox" onchange="toggleShowPass()" name="check_pass_regis" id="check_pass_regis">
+                                        <label for="check_pass_regis">Hiển thị mật khẩu</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="regist_header mgbt-20">
+                                <div class="regis_form_group">
+                                    <label >3.Nhập sô số điện thoại</label>
+                                    <input type="number" step="0" name="telephone" class="group_text_email" id="tel_regis">
+                                </div>
+                            </div>
+                            <a href="#" class="btn_next clrBlue" onclick="showResult()">
+                                Hoàn thành
+                            </a>
+                            <div class="group_user_policy">
+                                <a href="#" class="user_policy_text" onclick="preFormRegis()">&#60;&#60;Thay đổi lại email khác</a>
+                            </div>
                         </div>
                     </div>
                     <div class="login_footer">

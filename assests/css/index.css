@@ -17,6 +17,16 @@ body{
 .cl {
     display: none !important;
 }
+.clrBlue {
+    background-color: #018fe5 !important;
+    color: white !important;
+}
+.mgt-20 {
+    margin-top: 20px;
+}
+.mgbt-20{
+    margin-bottom: 20px;
+}
 .btn-close{
     font-size: 30px;
     color: white;
@@ -297,7 +307,7 @@ a.header_btm_item:hover{
     background-color: rgba(0, 0, 0, 0.5);
 }
 .nav_login_content{
-    width: 25%;
+    width: 410px;
     background-color: white;
     height: 100%;
     position: relative;
@@ -396,7 +406,7 @@ a.header_btm_item:hover{
     font-weight: bold;  
 }
 .regist_header {
-    margin-top: 20px;
+    
 }
 .regist_header label{
     font-weight: bold;
@@ -420,6 +430,7 @@ a.header_btm_item:hover{
     width: calc(100% -10px);
     text-align: center;
     padding: 12px 0px;
+    font-weight: bold;
 }
 .group_user_policy{
     display: flex;
@@ -431,5 +442,36 @@ a.header_btm_item:hover{
     font-size: 13px;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.check_pass {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#check_pass_regis{
+    transform: scale(1.2);
+}
+.check_pass label[for="check_pass_regis"]{
+    font-size: 14px;
+    padding-left: 5px;
+}
+#tel_regis input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.login_inner_head h1{
+    font-weight: bold;
+}
+#email_user {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+.login_head_intro {
+    font-weight: bold;
+}
+.login_inner_head  a:visited{
+    color: #00739f;
 }
 /* End header  */
