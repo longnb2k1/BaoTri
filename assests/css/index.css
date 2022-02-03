@@ -83,6 +83,8 @@ body{
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 600;
+    text-decoration: none;
+    color: white;
 }
 .header_line {
     width: 1px;
@@ -103,6 +105,11 @@ body{
     font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
+    text-decoration: none;
+
+}
+.header_item_linkpage{
+    text-decoration: none;
 }
 /* header bottom  */
 .header_bottom{

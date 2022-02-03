@@ -15,10 +15,13 @@ function showClick(idItemSelect,objectChange)
     {
         eleSelect.classList.remove("open");
         document.getElementById(objectChange).classList.add("cl");
+        document.querySelector(".header_navigation").classList.add("cl");
     }
     else{
         eleSelect.classList.add("open");
         document.getElementById(objectChange).classList.remove("cl");
+        document.querySelector(".header_navigation").classList.remove("cl");
+
     }
 }
 
