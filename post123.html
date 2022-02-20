@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo chí</title>
+    <link rel="stylesheet" href="./assests/css/grid.css">
+    <link rel="stylesheet" href="./assests/css/index.css">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- css post  -->
+</head>
+<body>
+    <div class="header" id="head">
+        <div class="header_top">
+            <div class="header_item_left">
+                <div class="header_item itemCanSelect" id="item--dm" idItemShow="header__nav--cm" onclick="showClick('item--dm','header__nav--cm')">
+                    <div class="header_item_block">
+                        <div class="header_text_icon">
+                            <i class="fas fa-bars iconItem"></i>
+                            <i class="far fa-times-circle itemClose"></i>
+                        </div>
+                        <div class="header_item_text">chuyên mục</div>
+                    </div>
+                </div>
+                <div class="header_item itemCanSelect" id="item--ti" idItemShow="header__nav--ti" onclick="showClick('item--ti','header__nav--ti')">
+                    <div class="header_item_block">
+                        <div class="header_text_icon">
+                            <i class="fas fa-puzzle-piece iconItem"></i>
+                            <i class="far fa-times-circle itemClose"></i>
+                        </div>
+                        <div class="header_item_text">tiện ích</div>
+                    </div>
+                </div>
+                <a href="./danhchoban.html" class="header_item header_item_linkpage">
+                    <div class="header_item_block">
+                        <div class="header_text_icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="header_item_text">dành cho bạn</div>
+                    </div>
+                </a>
+                <div class="header_item">
+                    <div class="header_item_block header_clear_border">
+                        <div class="header_text_icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="header_item_text">việc làm</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_logo">
+                <a href="./index.html" class="header_logo_text">báo chí</a>
+            </div>
+            <div class="header_item_right">
+                <div class="header_item" onclick="closeTabLogin(0)">
+                    <div class="header_item_block header_clear_border">
+                        <div class="header_text_icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="header_item_text">đăng nhập</div>
+                    </div>
+                </div>
+                <div class="header_item itemCanSelect" id="item--lh" idItemShow="header__nav--lh" onclick="showClick('item--lh','header__nav--lh')">
+                    <div class="header_item_block">
+                        <div class="header_text_icon">
+                            <i class="fas fa-paper-plane iconItem"></i>
+                            <i class="far fa-times-circle itemClose"></i>
+                        </div>
+                        <div class="header_item_text">liên hệ</div>
+                    </div>
+                </div>
+                <div class="header_item">
+                    <div class="header_item_block">
+                        <div class="header_text_icon">
+                            <i class="far fas fa-lightbulb"></i>
+                        </div>
+                        <div class="header_item_text">bạn cần biết</div>
+                    </div>
+                </div>
+                <div class="header_item itemCanSelect" id="item--tk" idItemShow="header__nav--tk"  onclick="showClick('item--tk','header__nav--tk')">
+                    <div class="header_item_block ">
+                        <div class="header_text_icon">
+                            <i class="fas fa-search iconItem"></i>
+                            <i class="far fa-times-circle itemClose"></i>
+                        </div>
+                        <div class="header_item_text">tìm kiếm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <a href="#" class="header_btm_item">
+                <div class="header_btm_text">
+                    Video
+                </div>
+            </a>
+            <a href="#" class="header_btm_item">
+                <div class="header_btm_text">
+                    Thời sự
+                </div>
+            </a>
+            <a href="#" class="header_btm_item">
+                <div class="header_btm_text">
+                    Thế giới
+                </div>
+            </a>
+            <a href="#" class="header_btm_item">
+                <div class="header_btm_text">
+                    tài chính - kinh doanh
+                </div>
+            </a>
+            <a href="#" class="header_btm_item">
+                <div class="header_btm_text">
+                    đời sống 
+                </div>
+            </a>
+            <a href="#" class="header_btm_item">
+                <div class="header_btm_text">
+                    Văn hóa
+                </div>
+            </a>
+            <a href="#" class="header_btm_item">
+                <div class="header_btm_text">
+                    giải trí
+                </div>
+            </a>
+            <a href="#" class="header_btm_item">
+                <div class="header_btm_text">
+                    giới trẻ
+                </div>
+            </a>
+            <a href="#" class="header_btm_item">
+                <div class="header_btm_text">
+                    giáo dục
+                </div>
+            </a>
+            <a href="#" class="header_btm_item">
+                <div class="header_btm_text">
+                    Thể thao
+                </div>
+            </a>
+            <a href="#" class="header_btm_item">
+                <div class="header_btm_text">
+                    Sức khỏe
+                </div>
+            </a>
+            <a href="#" class="header_btm_item">
+                <div class="header_btm_text">
+                    Công nghệ
+                </div>
+            </a>
+            <a href="#" class="header_btm_item">
+                <div class="header_btm_text">
+                    xe
+                </div>
+            </a>
+            <a href="#" class="header_btm_item">
+                <div class="header_btm_text">
+                    game
+                </div>
+            </a>
+            <a href="#" class="header_btm_item">
+                <div class="header_btm_text">
+                    thời trang trẻ
+                </div>
+            </a>
+            <a href="#" class="header_btm_item">
+                <div class="header_btm_text">
+                    bạn đọc
+                </div>
+            </a>
+            
+        </div>
+        <div class="header_navigation cl" >
+            <ul class="list_navigation cl" id="header__nav--cm">
+                <li class="list_nav_item">
+                    <a href="#" class="list_nav_link">
+                        video
+                    </a>
+                    <div class="list_nav-child">
+                        <ul class="child_list">
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thời sự</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Phóng sự</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Giải trí</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Món ngon</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thể thao</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thế giới</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Trực tuyến</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list_nav_item">
+                    <a href="#" class="list_nav_link">
+                        video
+                    </a>
+                    <div class="list_nav-child">
+                        <ul class="child_list">
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thời sự</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Phóng sự</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Giải trí</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Món ngon</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thể thao</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thế giới</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Trực tuyến</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list_nav_item">
+                    <a href="#" class="list_nav_link">
+                        video
+                    </a>
+                    <div class="list_nav-child">
+                        <ul class="child_list">
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thời sự</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Phóng sự</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Giải trí</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Món ngon</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thể thao</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thế giới</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Trực tuyến</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list_nav_item">
+                    <a href="#" class="list_nav_link">
+                        video
+                    </a>
+                    <div class="list_nav-child">
+                        <ul class="child_list">
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thời sự</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Phóng sự</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Giải trí</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Món ngon</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thể thao</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thế giới</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Trực tuyến</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list_nav_item">
+                    <a href="#" class="list_nav_link">
+                        video
+                    </a>
+                    <div class="list_nav-child">
+                        <ul class="child_list">
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thời sự</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Phóng sự</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Giải trí</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Món ngon</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thể thao</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thế giới</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Trực tuyến</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list_nav_item">
+                    <a href="#" class="list_nav_link">
+                        video
+                    </a>
+                    <div class="list_nav-child">
+                        <ul class="child_list">
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thời sự</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Phóng sự</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Giải trí</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Món ngon</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thể thao</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thế giới</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Trực tuyến</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list_nav_item">
+                    <a href="#" class="list_nav_link">
+                        video
+                    </a>
+                    <div class="list_nav-child">
+                        <ul class="child_list">
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thời sự</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Phóng sự</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Giải trí</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Món ngon</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thể thao</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Thế giới</a>
+                            </li>
+                            <li class="child_item">
+                                <a href="#" class="child_item_link">Trực tuyến</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list_nav_ti cl" id="header__nav--ti">
+                <li class="nav_ti_item">
+                    <a href="#" class="nav_ti_link">
+                        <i class="fas fa-wallet"></i>
+                        <div class="nav_ti_text">thanh toán</div>
+                    </a>
+                </li>
+                <li class="nav_ti_item">
+                    <a href="#" class="nav_ti_link">
+                        <i class="fas fa-umbrella"></i>
+                        <div class="nav_ti_text">thời tiết</div>
+                    </a>
+                </li>
+                <li class="nav_ti_item">
+                    <a href="#" class="nav_ti_link">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="nav_ti_text">tỷ giá ngoại tệ</div>
+                    </a>
+                </li>
+                <li class="nav_ti_item">
+                    <a href="#" class="nav_ti_link">
+                        <i class="fas fa-globe"></i>
+                        <div class="nav_ti_text">giá vàng</div>
+                    </a>
+                </li>
+                <li class="nav_ti_item">
+                    <a href="#" class="nav_ti_link">
+                        <i class="fas fa-award"></i>
+                        <div class="nav_ti_text">kết quả sổ xố</div>
+                    </a>
+                </li>
+                <li class="nav_ti_item">
+                    <a href="#" class="nav_ti_link">
+                        <i class="far fa-chart-bar"></i>
+                        <div class="nav_ti_text">chứng khoán</div>
+                    </a>
+                </li>
+                <li class="nav_ti_item">
+                    <a href="#" class="nav_ti_link">
+                        <i class="fas fa-tv"></i>
+                        <div class="nav_ti_text">lịch truyền hình</div>
+                    </a>
+                </li>
+                <li class="nav_ti_item">
+                    <a href="#" class="nav_ti_link">
+                        <i class="fas fa-film"></i>
+                        <div class="nav_ti_text">lịch chiếu phim</div>
+                    </a>
+                </li>
+                <li class="nav_ti_item">
+                    <a href="#" class="nav_ti_link">
+                        <i class="fas fa-tint"></i>
+                        <div class="nav_ti_text">giá xăng,dầu</div>
+                    </a>
+                </li>
+                <li class="nav_ti_item">
+                    <a href="#" class="nav_ti_link">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <div class="nav_ti_text">AQI</div>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav_tk cl" id="header__nav--tk">
+                <input type="text" name="Tìm kiếm" placeholder="Tìm kiếm" id="nav_search">
+                <a href="#" class="fas fa-search"></a>
+            </div>
+            <ul class="list_nav_ti cl" id="header__nav--lh">
+                <li class="nav_ti_item">
+                    <a href="#" class="nav_ti_link">
+                        <i class="far fa-newspaper"></i>
+                        <div class="nav_ti_text">đặt báo</div>
+                    </a>
+                </li>
+                <li class="nav_ti_item">
+                    <a href="#" class="nav_ti_link">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="nav_ti_text">0906 645 777</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav_login cl" id="nav_login-dp">
+            <div class="nav_login_inner ">
+                <i class="far fa-window-close btn-close" onclick="closeTabLogin(1)"></i>
+                <div class="nav_login_content">
+                    <div class="login_logo">
+                        <div class="header_logo_text">báo chí</div>
+                    </div>
+                    <div class="login_content_inner " id="form-log1">
+                        <div class="login_header">Đăng ký / Đăng nhập với BaoChi.vn</div>
+                        <div class="login_group_btn">
+                            <div class="btn_login">
+                                <div class="btn_login_logo">
+                                    <i class="fab fa-facebook-f"></i>
+                                </div>
+                                <div class="btn_login_text">
+                                    <div class="login_text_content">
+                                        Đăng nhập bằng Facebook
+                                    </div>                             
+                                </div>
+                            </div>
+                            <div class="btn_login">
+                                <div class="btn_login_logo login_color_red">
+                                    <i class="fab fa-google"></i>
+                                </div>
+                                <div class="btn_login_text login_color_red">
+                                    <div class="login_text_content">
+                                        Đăng nhập bằng Google
+                                    </div>                             
+                                </div>
+                            </div>
+                            <div class="btn_login">
+                                <div class="btn_login_logo login_color_blue">
+                                    <i class="login_icon">Z</i>
+                                </div>
+                                <div class="btn_login_text login_color_blue">
+                                    <div class="login_text_content">
+                                        Đăng nhập bằng Zalo
+                                    </div>                             
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login_subhead">
+                            Hoặc
+                        </div>
+                        <div class="regist_header mgt-20">
+                            <div class="regis_form_group">
+                                <label >Nhập địa chỉ email của bạn</label>
+                                <input type="email" name="email" class="group_text_email" id="email_regis">
+                            </div>
+                        </div>
+                        <a href="#" class="btn_next" onclick="nextFormRegis()">
+                            Tiếp tục
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        <div class="group_user_policy">
+                            <a href="#" class="user_policy_text">Điều khoản người sử dụng</a>
+                            <a href="#" class="user_policy_text">Quên mật khẩu?</a>
+                        </div>
+                    </div>
+                    <div class="login_content_inner cl" id="form-log2">
+                        <div class="login_inner_head">
+                            <h1>Chào mừng,</h1>
+                            <a id="email_user" href="#">hoangmanh12a@gmail.com</a>
+                            <div class="login_head_intro">Vui lòng hoàn thiện các thông tin dưới đây để tạo account truy cập <a href="#">Baochi.vn</a></div>
+                            <div class="regist_header mgt-20 ">
+                                <div class="regis_form_group">
+                                    <label >1.Tên hiển thị</label>
+                                    <input type="text" name="email" class="group_text_email" id="name_regis">
+                                </div>
+                            </div>
+                            <div class="regist_header">
+                                <div class="regis_form_group">
+                                    <label >2. Nhập mật khẩu</label>
+                                    <input type="password" name="password" placeholder="Nhập mật khẩu tối thiểu 6 ký tự" class="group_text_email" id="pass_regis">
+                                    <div class="check_pass">
+                                        <input type="checkbox" onchange="toggleShowPass()" name="check_pass_regis" id="check_pass_regis">
+                                        <label for="check_pass_regis">Hiển thị mật khẩu</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="regist_header mgbt-20">
+                                <div class="regis_form_group">
+                                    <label >3.Nhập sô số điện thoại</label>
+                                    <input type="number" step="0" name="telephone" class="group_text_email" id="tel_regis">
+                                </div>
+                            </div>
+                            <a href="#" class="btn_next clrBlue" onclick="showResult()">
+                                Hoàn thành
+                            </a>
+                            <div class="group_user_policy">
+                                <a href="#" class="user_policy_text" onclick="preFormRegis()">&#60;&#60;Thay đổi lại email khác</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login_footer">
+                    <div class="login_footer_text">
+                        This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.
+                    </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="coating"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content_inner">
+            <div class="grid-container-1">
+                <div class="grid-item">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__inner">
+            <ul class="footer__catelist">
+                <li class="catelist__item">
+                    <ul class="catelist__item__list">
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">tin 24h</a></h3>
+                        </li>
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">tin nhanh 360</a></h3>
+                        </li>
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">tin thị trường</a></h3>
+                        </li>
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">dành cho bạn</a></h3>
+                        </li>
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">video</a></h3>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catelist__item">
+                    <ul class="catelist__item__list">
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">thời sự</a></h3>
+                        </li>
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">thế giới</a></h3>
+                        </li>
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">tài chính - kinh doanh</a></h3>
+                        </li>
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">đời sống</a></h3>
+                        </li>
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">văn hóa - giải trí</a></h3>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catelist__item">
+                    <ul class="catelist__item__list">
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">giới trẻ</a></h3>
+                        </li>
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">giáo dục</a></h3>
+                        </li>
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">sức khỏe</a></h3>
+                        </li>
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">du lịch</a></h3>
+                        </li>
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">thời trang trẻ</a></h3>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catelist__item">
+                    <ul class="catelist__item__list">
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">Game</a></h3>
+                        </li>
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">xe</a></h3>
+                        </li>
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">việc làm</a></h3>
+                        </li>
+                        <li class="catelist__item__heading">
+                            <h3><a href="#">bạn cần biết</a></h3>
+                        </li>
+                    </ul>
+                </li>
+                <li class="catelist__item">
+                    <ul class="catelist__item__list">
+                        <li class="catelist__item__heading">
+                            <h3><a href="tel:+0906 645 777">Hotline<div>0906 645 777</div></a></h3>
+                        </li>
+                        <li class="catelist__item__heading">
+                            <h3><a href="tel:+0908 780 404">liên hệ quảng cáo <div>0908 780 404</div></a></h3>
+                        </li>
+                        <li class="catelist__item__heading">
+                            <img usemap="#socialNetwork" src="./assests/img/footer-follow.png" alt="liên kết mạng xã hội">
+                            <map name="socialNetwork">
+                                <area shape="rect" coords="0,0,52,42" href="https://www.facebook.com/thanhnien" alt="facebook">
+                                <area shape="rect" coords="53,0,101,45" href="https://zalo.me/2431025964363015388" alt="zalo">
+                                <area shape="rect" coords="102,0,157,44" href="https://www.youtube.com/channel/UCIW9cGgoRuGJnky3K3tbzNg" alt="youtube">
+                            </map>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="footer__info">
+                <div class="footer__info__left">
+                    <div class="footer__logo header_logo">
+                        <a href="./index.html" class="header_logo_text">báo chí</a>
+                    </div>
+                    <strong>Nguồn: </strong>
+                    <a href="https://thanhnien.vn/">Thanhnien.vn</a>
+                    <br>
+
+                </div>
+                <div class="footer__info__right">
+                    <nav class="footer__nav">
+                        <a href="#">Đặt báo </a>
+                        <a href="#">RSS</a>
+                        <a href="#">Tòa soạn</a>
+                        <a href="#">Chính sách bảo mật</a>
+                    </nav>
+                    Tổng biên tập: 
+                    <strong>Nguyễn Ngọc Toàn</strong>
+                    <br>
+                    Phó tổng biên tập: 
+                    <strong>Hải Thành</strong>
+                    <br>
+                    Phó tổng biên tập: 
+                    <strong>Đặng Thị Phương Thảo</strong>
+                    <br>
+                    Ủy viên Ban biên tập - Tổng Thư ký tòa soạn: 
+                    <strong>Trần Việt Hưng</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="go-up" href="#">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    
+    <script src="./assests/js/index.js"></script>
+</body>
+</html>
