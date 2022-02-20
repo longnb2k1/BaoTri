@@ -1,3 +1,8 @@
+//
+//
+//          HEADER
+//
+//
 var listItem = document.querySelectorAll('.itemCanSelect');
 var eleForm1 = document.getElementById("form-log1");
 var eleForm2 = document.getElementById("form-log2");
@@ -65,4 +70,23 @@ function showResult()
     var passUser = eleForm2.querySelector("#pass_regis").value;
     var telUser = eleForm2.querySelector("#tel_regis").value;
     window.alert(nameUser + "\n" + passUser + "\n" + telUser + "\n" + emailUser)
+}
+//
+//
+//      CONTENT
+//
+//            
+
+function openTabsRightContent(event,tabContentName) {
+    var eleTabContents = document.querySelectorAll(".tabs_content_inner");
+    eleTabContents.forEach(ele => {
+        if (ele.id == tabContentName){
+            ele.classList.remove("cl");
+        }
+        else{
+            ele.classList.add("cl");
+        }
+    });
+    document.querySelector(".r_active").classList.remove("r_active");
+    event.currentTarget.className += ' r_active';
 }
