@@ -90,3 +90,9 @@ function openTabsRightContent(event,tabContentName) {
     document.querySelector(".r_active").classList.remove("r_active");
     event.currentTarget.className += ' r_active';
 }
+
+// get comment user page : post.html
+function getCommentUser(){
+    const cmtUser = document.querySelector('textarea#text_user');
+    window.alert(cmtUser.value);
+}
