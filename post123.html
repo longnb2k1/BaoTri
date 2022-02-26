@@ -758,7 +758,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <div class="detail_meta">
+                            <div class="detail_meta detail_meta2">
                                 <div class="detail_social">
                                     <div class="detail_fbplugin">
                                         <a href="#" class="btn_like">
@@ -780,17 +780,39 @@
                                 </div>
                             </div>
                             <div class="detail_comment">
-                                <div class="detail_author">
+                                <div class="detail_author input_cmt">
                                     <div class="author_img  is-hover">
                                         <img src="./assests/img/author_ava.png" alt="avt author">
                                     </div>
                                     <div class="author_info">
                                         <span>
-                                            <textarea name="" id="text_user" cols="30" rows="10"></textarea>
+                                            <textarea name="" id="text_user" cols="30" rows="10" placeholder="Ý kiến của bạn?"></textarea>
                                         </span>
-                                        <a href="mailto:maithu301@gmail.com" class="is-hover">
-                                            maithu301@gmail.com
-                                        </a>
+                                        <span class="author_info_btm">
+                                            <div class="author_info_register">
+                                                <span>Đăng kí</span>
+                                            </div>
+                                            <input type="button" value="Gửi bình luận" class="btn_cmt" onclick="getCommentUser()">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="detail_author show_cmt">
+                                    <div class="author_img  is-hover">
+                                        <img src="./assests/img/avt_us.png" alt="avt author">
+                                    </div>
+                                    <div class="author_info">
+                                        <span>
+                                            <div class="nameAtime_us_cmt">
+                                                <div class="name_us_cmt">Phạm Văn Biển</div>
+                                                <time>20:41 ngày 25/02/2022</time>
+                                            </div>
+                                            <div class="content_us_cmt">Hoan hô Công an tỉnh Khánh Hòa, liên quan đến Việt Á nếu mình không nhầm thì đây là lần đầu tiên Cơ quan Công an địa phương vào cuộc.</div>
+                                        </span>
+                                        <span class="us_response">
+                                            <a href="#" class="us_response_t t_active"><i class="fa-solid fa-thumbs-up"></i><span class="res_like_num">10</span> Thích</a>
+                                            <a href="#" class="us_response_tl"><i class="fa-solid fa-paper-plane"></i>Trả lời</a>
+                                            <a href="#" class="us_response_bc"><i class="fa-solid fa-circle-exclamation"></i>Báo cáo</a>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
